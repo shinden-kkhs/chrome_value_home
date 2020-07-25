@@ -1,0 +1,10 @@
+{
+    "name": "Vision-Mission-Value Viewer",
+    "version": "0.1",
+    "description": "新規タブを開いたときに指定した文字をランダムで表示します",
+    "manifest_version": 2,
+    "permissions" : ["management","storage"],
+    "chrome_url_overrides" : {
+        "newtab": "index.html"
+    }
+}
