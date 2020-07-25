@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vision-Mission-Value Viewer Extension Options</title>
+<body>
+
+<div>
+:Message List:
+1行がランダムに表示されます。
+何も設定しないとデフォルトの表示がされます。
+<br/>
+<textarea id="value_text" rows="30" cols="40">
+</textarea>
+</div>
+
+<br/>
+<br/>
+<div>
+:Data Url:
+HTTP上からデータを取得します。取得したテキストから1行がランダムで表示されます。
+上記のMessage Listより優先されて利用されます。<br/>
+通信エラーが発生した際には上記のMessage Listが利用されます。(開発中)<br/>
+(raw.githubusercontent.comのみ)<br/>
+<br/>
+URL <input type="text" id="data_url" size="100"/>
+</div>
+
+<br/><br/>
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="option.js">
+</script>
+</body>
+</html>
